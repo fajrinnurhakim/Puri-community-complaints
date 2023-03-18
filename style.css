@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======================SCRIPT CSS WEBSITE==================================*/
+/*- BODY, CONTAINER, HEADER, NAVIGASI -*/
+body{
+	background-color: #FFEDDB;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	overflow: auto;
+}
+
+h1{
+	text-align: center;
+	/*ketebalan font*/
+	font-weight: 300;
+}
+
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+	color: white;
+}
+
+.kotak_login{
+	width: 350px;
+	background: #BF9270;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+	border-radius: 10px;
+}
+
+label{
+	font-size: 11pt;
+	color: white;
+}
+
+.kotak_login a{
+	color: white;
+}
+
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+
+.tombol_login{
+	background: #E3B7A0;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.alert{
+	background: #e44e4e;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	border:1px solid #b32929;
+}
+
+
+
+.container{
+	width: 800px;
+	margin: auto;
+	background: rgba(0, 0, 0, 1);
+}
+
+.header{
+	padding: 20px;
+	padding-bottom: 30px;
+	background: #BF9270;
+}
+
+.header .judul{
+	width: 100px;
+	height: 50px;
+	padding-left: 10px;
+	margin: 10px 10px;
+}
+
+.menu{
+	overflow: hidden;
+	background: #FFEDDB;
+	border-bottom: 5px solid #E3B7A0;
+
+}
+
+.menu .judul{
+	width: 50px;
+	height: 25px;
+}
+
+.menu a{
+	float: right;
+	text-decoration: none;
+	color: #BF9270;
+	margin-rights: 5px;
+	padding: 10px 10px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	transition: all 1s ease;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.menu a:hover {
+	background: #E3B7A0;
+	color: #ffffff;
+}
+
+.menu a.dipakai{
+	background: #E3B7A0;
+	color: #ffffff;
+}
+
+.menu #dipakai{
+	background: #E3B7A0;
+	color: #ffffff;
+}
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-right: 5px;
+}
+
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #BF9270;
+  padding: 6px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin-left: 0; 
+  transition: all 1s ease;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #E3B7A0;
+  color: #ffffff;
+}
+
+.dropdown-content {
+	right: 0;
+  display: none;
+  position: absolute;
+  background-color: #E3B7A0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #E3B7A0;
+  border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*- BODY, CONTAINER, HEADER, NAVIGASI -*/
+/*- HOME -*/
+.konten_home{
+	background-color: ;
+}
+
+.konten_home .hero_home{
+	width: 300px;
+	height: 100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+  padding: 10px;
+}
+
+.konten_home .hero1_home{
+	width: 500px;
+	height: 300px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+  padding: 10px;
+}
+
+.konten_home .gb_artikel{
+	width: 400px;
+	height: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+  padding: 10px;
+}
+
+.konten_home .judul_artikel{
+	margin-left: 12px;
+	font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+	color: #BF9270;
+	text-align: center;
+}
+
+.konten_home .ket{
+	margin-left: 12px;
+	margin-top: 5px;
+	font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+	color: #BF9270;
+}
+
+.konten_home .ket a{
+	text-decoration: none;
+	color: #E3B7A0;
+	font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.konten_home .isi_artikel1{
+	text-align: justify;
+	margin: 15px 12px;
+	font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+	color: black;
+}
+
+.konten_home .isi_artikel2{
+	text-align: center;
+	margin: 15px 12px;
+	font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+	color: black;
+}
+/*- HOME -*/
+/*- KONTAK -*/
+.konten_kontak .judul_kontak{
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: 'Poppins' wght 300, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+	color: #BF9270;
+}
+
+.konten_kontak .isi_kontak{
+	text-align: justify;
+	margin-top: 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+	font-family: 'Poppins', sans-serif ;
+    font-size: 14px;
+    font-weight: 300;
+	padding-bottom: 20px;
+	color: black;
+}
+
+.googlemap {
+	padding top: 20px;
+	padding-bottom: 20px;
+}
+
+.list_kontak .wa{
+	width: 50px;
+	height: 50px;
+	padding-left: 540px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.list_kontak .fb{
+	width: 50px;
+	height: 50px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 18px;
+}
+
+.list_kontak .ig{
+	width: 50px;
+	height: 50px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 23px;
+}
+
+.list_kontak .gmail{
+	width: 50px;
+	height: 50px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 20px;
+}
+/*- KONTAK -*/
+
+/*- FOOTER -*/
+.footer{
+	background: #BF9270;
+	width: auto;
+	height: 30px;
+	padding-top: 10px;
+}
+
+.footer p{
+	color: white;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+/*- FOOTER -*/
+
+.table-container {
+	overflow: auto;
+}
+
+/*- TABEL -*/
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #FFEDDB;
+  border: 1px solid #BF9270;
+  padding: .35em;
+}
+table td {
+	font-size: 18px;
+  padding: .625em;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #BF9270;
+  color: #BF9270;
+}
+
+table th {
+  font-size: 24px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #FFEDDB;
+  color: #BF9270;
+}
+/*- TABEL -*/
+/*- form -*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #E3B7A0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=password] {
+  width: 100%;
+  background-color: #E3B7A0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
